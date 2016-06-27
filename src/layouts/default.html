@@ -14,9 +14,13 @@
   <body>
     <!-- The main layout out container for MDL -->
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      {{> header}}
+
       {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
       {{> body}}
     </div>
+
+
     <script src="{{root}}assets/js/app.js"></script>
   </body>
 </html>
