@@ -1,0 +1,22 @@
+{{!-- This is the base layout for your project, and will be used on every page. --}}
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="{{root}}assets/css/app.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+  </head>
+  <body>
+    <!-- The main layout out container for MDL -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+      {{> body}}
+    </div>
+    <script src="{{root}}assets/js/app.js"></script>
+  </body>
+</html>
