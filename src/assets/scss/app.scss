@@ -61,9 +61,55 @@ with the material design library */
 body {
   background: #fbfbfb; // Possibly try #e6e8f9
 }
+
 section h1 {
   text-align: center;
 }
+
+
+/**********/
+/* Header */
+/**********/
+.site-header__title-row {
+  min-height: 175px;
+  width: 100vw;
+  padding: 0;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+// Clear min-height when collapsed
+.is-compact .site-header__title-row {
+  min-height: 0;
+  flex-direction: row;
+}
+
+.picture-me {
+  background: url(../img/me.jpg) 50% no-repeat;
+  background-size: cover;
+  height: 36vw;
+  width: 36vw;
+  border-radius: 50%;
+  transition: width .2s, height .1s;
+}
+
+.is-compact .picture-me {
+  height: 45px;
+  height: 10.8vw;
+  width: 45px;
+  width: 10.8vw;
+  margin-right: 1em;
+}
+
+.site-header__link-row {
+  padding: 0;
+  margin: 0 auto;
+}
+
+/*****************/
+/* Project Cards */
+/*****************/
 .project-card {
   @include shadow-2dp;
 }
@@ -80,3 +126,6 @@ section h1 {
   // background: unquote("rgb(#{$color-primary-dark})");
 }
 
+.portfolio-header {
+  // position: relative;
+}
