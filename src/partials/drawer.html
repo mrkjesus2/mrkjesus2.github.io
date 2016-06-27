@@ -1,0 +1,28 @@
+<!-- Always shows a header, even in smaller screens. -->
+<!-- The main container is located in default.html layout -->
+<header class="mdl-layout__header">
+<!-- TODO: Can I have 2 navs in this instance -->
+  <nav class="mdl-layout__header-row">
+    <!-- Title -->
+    <span class="mdl-layout-title">Mark Weigel</span>
+    <!-- Add spacer, to align navigation to the right -->
+    <div class="mdl-layout-spacer"></div>
+    <!-- Navigation. We hide it in small screens. -->
+    <nav class="mdl-navigation mdl-layout--large-screen-only">
+      <a class="mdl-navigation__link" href="">About Me</a>
+      <a class="mdl-navigation__link" href="">Portfolio</a>
+      <a class="mdl-navigation__link" href="">Contact</a>
+      <a class="mdl-navigation__link" href="">Footer</a>
+    </nav>
+  </nav>
+</header>
+<div class="mdl-layout__drawer mdl-layout--small-screen-only">
+  <span class="mdl-layout-title">Mark Weigel</span>
+  <nav class="mdl-navigation">
+    <a class="mdl-navigation__link" href="">About Me</a>
+    <a class="mdl-navigation__link" href="">Portfolio</a>
+    <a class="mdl-navigation__link" href="">Contact</a>
+    <a class="mdl-navigation__link" href="">Footer</a>
+  </nav>
+</div>
+
