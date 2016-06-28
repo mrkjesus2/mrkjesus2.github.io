@@ -114,6 +114,10 @@ section h1 {
   @include shadow-2dp;
 }
 
+.project-card__date {
+  padding-left: .5em;
+}
+
 .project-card img {
   max-width: 100%;
 }

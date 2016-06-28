@@ -2,18 +2,16 @@
   <!-- Portfolio -->
   <section id="portfolio" class="mdl-grid">
     <h1 class="mdl-cell mdl-cell--12-col">Portfolio</h1>
-
     {{#each project}}
     <div class="project-card mdl-card mdl-cell">
-      <div class="mdl-card__title">
-        <h2 class="mdl-card__title-text">{{this.title}}  -
-          <span class="project-card__date">
-            {{this.date-completed}}
-          </span>
-        </h2>
-      </div>
       <div class="mdl-card__media">
         <img src="{{this.img-url}}" alt="{{this.alt-text}}">
+      </div>
+      <div class="mdl-card__title">
+        <h2 class="mdl-card__title-text">{{this.title}}</h2>
+          <p class="project-card__date mdl-card__subtitle-text">
+            - {{this.date-completed}}
+          </p>
       </div>
       <div class="mdl-card__supporting-text">{{this.short-desc}}</div>
       <div class="mdl-card__actions mdl-card--border">
@@ -24,6 +22,5 @@
     </div>
     {{/each}}
   </section>
-
-{{> footer}}
+  {{> footer}}
 </main>
