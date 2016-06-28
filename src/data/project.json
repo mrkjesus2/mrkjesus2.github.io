@@ -1,0 +1,48 @@
+[
+  {
+    "title": "Neighborhood Map",
+    "img-url": "assets/img/NeighborhoodMap.png",
+    "img-alt": "Screenshot of my Neighborhood Map project",
+    "short-desc": "This is a project that I completed as part of my Front End Nanodegree at Udacity.com. It uses the Wikipedia, Foursquare, Google Maps, and Google Places APIs and AJAX calls to provide data about interesting places in my neighborhood. It was built using knockout.js for two-way data-binding.",
+    "long-desc": "TODO",
+    "date-completed": "TODO",
+    "url": "TODO",
+    "tech-used": "HTML, CSS, Knockout.js, AJAX, Various APIs"
+  },{
+    "title": "Frogger Clone",
+    "img-url": "assets/img/frogger.png",
+    "img-alt": "Screenshot of my Frogger Clone",
+    "short-desc": "I completed this project as part of the Udacity.com Front End Nanodegree. I was provided with all of the sprites for the game as well as a game engine. My job was to write the prototypes for the different objects(i.e. player, gems, and enemies) as well as write the collision logic. I decided that I also wanted to add score keeping as well as a nifty start screen that was drawn using HTML Canvas.",
+    "long-desc": "TODO",
+    "date-completed": "TODO",
+    "url": "TODO",
+    "tech-used": "HTML Canvas, Javascript, TODO"
+  },{
+    "title": "Mobile Portfolio",
+    "img-url": "assets/img/MobilePortfolio.png",
+    "img-alt": "Screenshot of my Mobile Portfolio project",
+    "short-desc": "The primary goal of this Udacity.com project was to focus on performance. By moving document queries out of loops I was able to speed this site up significantally. The page started out with a Page Speed Insights mobile score in the 70s which I was able to improve to a score of 95.",
+    "long-desc": "TODO",
+    "date-completed": "TODO",
+    "url": "TODO",
+    "tech-used": "Javascript refactoring"
+  },{
+    "title": "Resume Project",
+    "img-url": "assets/img/Resume.png",
+    "img-alt": "Screenshot of my resume project",
+    "short-desc": "My resume project for Udacity.com's Front End Nanodegree. This was an exercise in using JSON objects for data-binding. It also provide a very brief encounter with the Google Maps API. The purpose of this project was to lay the groundwork for future projects that would rely more on external data.",
+    "long-desc": "TODO",
+    "date-completed": "TODO",
+    "url": "TODO",
+    "tech-used": "HTML, CSS, Javascript, JQuery"
+  },{
+    "title": "Portfolio Site",
+    "img-url": "assets/img/Portfolio.png",
+    "img-alt": "Screenshot of my first portfolio site",
+    "short-desc": "In my first project for my Front End Nanodegree I was given the equivalent of a Photoshop comp and given the task of styling the page to the comps specifications. Having no projects to highlight, I used some photography that I have shot.",
+    "long-desc": "TODO",
+    "date-completed": "TODO",
+    "url": "TODO",
+    "tech-used": "HTML, CSS"
+  }
+]
