@@ -107,12 +107,16 @@ section h1 {
   margin: 0 auto;
 }
 
+.card {
+  @include shadow-2dp;
+}
+
 /*****************/
 /* Project Cards */
 /*****************/
-.project-card {
-  @include shadow-2dp;
-}
+// .project-card {
+//   @include shadow-2dp;
+// }
 
 .project-card__date {
   padding-left: .5em;
@@ -124,6 +128,11 @@ section h1 {
 
 .project-card:hover {
   @include focus-shadow;
+}
+
+.project-card__links {
+  display: flex;
+  justify-content: space-around;
 }
 
 .project-card > .mdl-card__title {
