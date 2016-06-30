@@ -3,7 +3,7 @@
   <section id="portfolio" class="mdl-grid">
     <h1 class="mdl-cell mdl-cell--12-col">Portfolio</h1>
     {{#each project}}
-    <div class="project-card mdl-card mdl-cell">
+    <div class="card project-card mdl-card mdl-cell mdl-card--expand">
       <div class="mdl-card__media">
         <img src="{{this.img-url}}" alt="{{this.alt-text}}">
       </div>
@@ -14,9 +14,12 @@
           </p>
       </div>
       <div class="mdl-card__supporting-text">{{this.short-desc}}</div>
-      <div class="mdl-card__actions mdl-card--border">
+      <div class="project-card__links mdl-card__actions mdl-card--border">
+        <a href="project-{{@index}}.html" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+          Read More
+        </a>
         <a href="{{this.url}}" class="mdl-button mdl-js-button mdl-js-ripple-effect">
-          Related Action
+          View Project
         </a>
       </div>
     </div>
