@@ -74,19 +74,5 @@
     "date-completed": "Sept 2015",
     "url": "weigel.site/Portfolio",
     "tech-used": "HTML, CSS, Grunt"
-  },{
-    "title": "Test Project",
-    "short-desc": "A overall look at the project that would be used on the initial page",
-    "img-url": "assets/img/froggerstart.png",
-    "img-alt": "Screenshot",
-    "intro-desc": "This is a bunch of stuff that I will want to say about the beginning phase of the project. I will have to talk about the inspiration of the project, the first steps that were taken, and how I decided what the next steps would be. Be thorough but concise.",
-    "main-desc": "A whole lot more of text about the project describing what happened next and why it was important. Include technical challenges and how you overcame them as well as why the solution was interesting",
-    "outro-desc": "Talk about the successes of the project and why you are proud of your work. This is the time to really sell what you did and why people should think that you are the best thing since sliced bread.",
-    "intro-pic": "assets/img/froggerstart",
-    "main-pic": "assets/img/froggerstart",
-    "outro-pic": "assets/img/froggerstart",
-    "date-completed": "June 2016",
-    "url": "weigel.site",
-    "tech-used": "blah, blah, blah"
   }
 ]
