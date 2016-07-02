@@ -1,6 +1,12 @@
 <nav class="mdl-navigation">
   <a class="mdl-navigation__link" href="index.html">Portfolio</a>
+    <nav class="navigation__nested-links">
+      {{#each project}}
+        <a href="Project-{{@index}}.html" class="mdl-navigation__link navigation__nested-link">
+          {{this.title}}
+        </a>
+      {{/each}}
+    </nav>
   <a class="mdl-navigation__link" href="about.html">About Me</a>
   <a class="mdl-navigation__link" href="#contact">Contact</a>
-  <a class="mdl-navigation__link" href="#footer">Footer</a>
 </nav>
