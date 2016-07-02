@@ -6,9 +6,10 @@
 /*****************/
 /* Project Cards */
 /*****************/
-// .project-card {
-//   @include shadow-2dp;
-// }
+// To correct leading according to Material Design
+.mdl-card__title {
+  padding-bottom: 0;
+}
 
 .project-card__date {
   padding-left: .5em;

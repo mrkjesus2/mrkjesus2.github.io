@@ -19,12 +19,10 @@
   margin: 0;
 }
 
-// Clear min-height when collapsed
 .is-compact .site-header__title-row {
-  min-height: 0;
   flex-direction: row;
-  // Allow name and position to show in fixed header
-  font-size: 0.5em;
+  // Clear min-height when collapsed
+  min-height: 0;
 }
 
 .picture-me {
@@ -48,6 +46,10 @@
 // Clear menu button down to 245px
 .is-compact h1 {
   margin-left: 4em;
+}
+
+.is-compact .page-subtitle {
+  display: none;
 }
 
 /*********************/
@@ -97,8 +99,8 @@
 }
 @media screen and (min-width: 400px) {
   .is-compact {
-    & .site-header__title-row {
-      font-size: 1em;
+    & .page-subtitle {
+      display: initial;
     }
 
     & .picture-me {

@@ -1,0 +1,7 @@
+/* Adjust leading between paragraphs */
+.about__paragraph {
+  padding-bottom: 0.5rem;
+  & ~ .about__paragraph {
+    padding-top: 0;
+  }
+}
