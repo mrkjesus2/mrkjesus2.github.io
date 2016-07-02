@@ -1,0 +1,40 @@
+/**********/
+/* Footer */
+/**********/
+.mdl-mini-footer {
+  padding-bottom: 0;
+}
+
+// Ensure a good touch target on mobile devices
+// .mdl-mini-footer__social-btn {
+  // min-width: 48px;
+  // min-height: 48px;
+  // margin: 0 1vw;
+// }
+
+// Social media icon backgrounds
+.github-btn {
+  background: url('../img/icons/github-box-white.svg') no-repeat;
+  background-size: 100%;
+}
+
+.gplus-btn {
+  background: url('../img/icons/google-plus-box-white.svg') no-repeat;
+  background-size: 100%;
+}
+
+.twitter-btn {
+  background: url('../img/icons/twitter-box-white.svg') no-repeat;
+  background-size: 100%;
+}
+
+.linkedin-btn {
+  background: url('../img/icons/linkedin-box-white.svg') no-repeat;
+  background-size: 100%;
+  color: white;
+}
+
+.footer__contact {
+  display: block;
+  text-align: right;
+}

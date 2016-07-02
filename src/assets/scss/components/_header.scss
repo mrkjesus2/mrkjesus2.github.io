@@ -1,0 +1,115 @@
+/**********************/
+/* Header - Title Row */
+/**********************/
+.site-header__title-row {
+  // Viewport width - .picture-me height - .picture-me margins - .page-title marigins
+  min-height: calc(100vw - 36vw - 0.7em - 1em);
+  width: 100%;
+  padding: 0;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.page-title {
+  margin: 0 0.5em;
+}
+
+.page-subtitle {
+  margin: 0;
+}
+
+// Clear min-height when collapsed
+.is-compact .site-header__title-row {
+  min-height: 0;
+  flex-direction: row;
+  // Allow name and position to show in fixed header
+  font-size: 0.5em;
+}
+
+.picture-me {
+  background: url(../img/me.jpg) 50% no-repeat;
+  background-size: cover;
+  height: 30vw;
+  width: 30vw;
+  margin-bottom: 0.7em;
+  border-radius: 50%;
+  transition: width .2s, height .1s;
+}
+
+.is-compact .picture-me {
+  height: 10.8vw;
+  width: 10.8vw;
+  margin: 0 1em;
+  // Move image to right when compact
+  order: 2;
+}
+
+// Clear menu button down to 245px
+.is-compact h1 {
+  margin-left: 4em;
+}
+
+/*********************/
+/* Header - Link Row */
+/*********************/
+.site-header__link-row {
+  padding: 0;
+  height: 1.5em;
+}
+
+// Prevent from showing when collapsed on very narrow devices
+.is-compact .site-header__link-row {
+  margin-top: 1em;
+}
+
+.site-header__link-row nav {
+  width: 100%;
+  justify-content: space-around;
+}
+
+/*************************/
+/* Header - Drawer Links */
+/*************************/
+.navigation__nested-links {
+  display: none;
+  @include typo-body-2(true);
+  & a {
+    // Due to (wreckless?) specificity in MDL and no built in nested
+    // navigation, I am forced to use !important for the time being
+    padding: 0.6em 2.4em !important;
+  }
+  &:first-child {
+    padding-top: 0 !important;
+  }
+}
+
+.is-visible .navigation__nested-links {
+  display: initial;
+}
+
+@media screen and (min-width: 325px) {
+  .is-compact {
+    & .site-header__title-row {
+      justify-content: space-around;
+    }
+  }
+}
+@media screen and (min-width: 400px) {
+  .is-compact {
+    & .site-header__title-row {
+      font-size: 1em;
+    }
+
+    & .picture-me {
+      height: 8vw;
+      width: 8vw;
+    }
+  }
+
+  .picture-me {
+    height: 42vw;
+    width: 42vw;
+  }
+}
+// TODO: Compact image is too big above 610px

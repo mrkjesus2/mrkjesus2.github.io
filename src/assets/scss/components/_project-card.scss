@@ -1,0 +1,36 @@
+// Standard shadow for all cards
+.card {
+  @include shadow-2dp;
+}
+
+/*****************/
+/* Project Cards */
+/*****************/
+// .project-card {
+//   @include shadow-2dp;
+// }
+
+.project-card__date {
+  padding-left: .5em;
+}
+
+.project-card img {
+  max-width: 100%;
+}
+
+.project-card:hover {
+  @include focus-shadow;
+}
+
+.project-card__links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.project-card > .mdl-card__title {
+  // background: unquote("rgb(#{$color-primary-dark})");
+}
+
+.portfolio-header {
+  // position: relative;
+}
