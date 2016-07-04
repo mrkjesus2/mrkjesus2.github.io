@@ -1,24 +1,28 @@
-<section class="card mdl-card mdl-grid">
-  <h1 class="mdl-cell mdl-card__title-text">{{title}}</h1>
-  <h3 class="mdl-cell mdl-typography--headline">Initial Step</h3>
-    <p class="mdl-cell mdl-cell--2-col mdl-card__supporting-text">
-      {{intro-desc}}
-    </p>
-  <div class="mdl-cell mdl-cell--2-col">
-    <img style="max-width: 100%" src="{{intro-pic}}.png" alt="picture">
-  </div>
-  <h1 class="mdl-cell mdl-typography--title">Next Step</h1>
-  <div class="mdl-cell mdl-cell--2-col">
-    <img style="max-width: 100%" src="{{main-pic}}.png" alt="picture">
-  </div>
-  <p class="mdl-cell mdl-cell--2-col">
-    {{main-desc}}
-  </p>
-  <h1 class="mdl-cell mdl-typography--title">Wrap Up</h1>
-    <p class="mdl-cell mdl-cell--2-col">
-      {{outro-desc}}
-    </p>
-  <div class="mdl-cell mdl-cell--2-col">
-    <img style="max-width: 100%" src="{{outro-pic}}.png" alt="picture">
-  </div>
-</section>
+<main class="mdl-layout">
+  <section class="mdl-grid project-detail">
+    <div class="card mdl-card mdl-cell">
+      <h1 class="mdl-cell mdl-card__title-text">{{title}}</h1>
+      <h3 class="mdl-cell mdl-typography--headline">Initial Step</h3>
+      <p class="mdl-cell mdl-cell--6-col mdl-card__supporting-text">
+        {{intro-desc}}
+      </p>
+      <div class="mdl-cell mdl-cell--6-col">
+        <img style="max-width: 100%" src="{{intro-pic}}.png" alt="picture">
+      </div>
+      <h3 class="mdl-cell mdl-typography--headline">Next Step</h3>
+      <div class="mdl-cell mdl-cell--6-col">
+        <img style="max-width: 100%" src="{{main-pic}}.png" alt="picture">
+      </div>
+      <p class="mdl-cell mdl-cell--6-col mdl-card__supporting-text">
+        {{main-desc}}
+      </p>
+      <h3 class="mdl-cell mdl-typography--headline">Wrap Up</h3>
+      <div class="mdl-cell mdl-cell--6-col">
+        <img style="max-width: 100%" src="{{outro-pic}}.png" alt="picture">
+      </div>
+      <p class="mdl-cell mdl-cell--6-col mdl-card__supporting-text">
+        {{outro-desc}}
+      </p>
+    </div>
+  </section>
+</main>
