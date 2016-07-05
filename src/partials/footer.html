@@ -1,21 +1,53 @@
 <footer class="mdl-mini-footer">
   <section class="mdl-mini-footer__left-section">
-    <span class="mdl-logo">Find me on Social Media</span>
-    <div class=mdl-mini-footer__link-list>
-    <!-- TODO: Change to links add ARIA role=button -->
-    <ul class="mdl-mini-footer__link-list">
-      <li><button class="mdl-mini-footer__social-btn github-btn"></button></li>
-      <li><button class="mdl-mini-footer__social-btn gplus-btn"></button></li>
-      <li><button class="mdl-mini-footer__social-btn twitter-btn"></button></li>
-      <li><button class="mdl-mini-footer__social-btn linkedin-btn"></button></li>
-    </ul>
-    </div>
+    <div class="mdl-logo">Find Me</div>
   </section>
   <section class="mdl-mini-footer__right-section">
-    <span class="mdl-logo">Find me in the "real" world</span>
-      <ul class="mdl-mega-footer__link-list">
-        <li><a class="footer__contact" href="TODO">267-603-2621</a></li>
-        <li><a class="footer__contact" href="TODO">markweig@gmail.com</a></li>
-      </ul>
+    <ul class="mdl-mini-footer__link-list">
+      <li>
+        <a href="https://www.github.com/mrkjesus2">
+          <svg id="github" class="svg-icon">
+            <use xlink:href="assets/img/icons/icons.svg#icon-github"></use>
+          </svg>
+          <div for="github" class="mdl-tooltip mdl-tooltip--top mdl-tooltip--large">
+            View my Github
+          </div>
+        </a>
+      </li>
+      <li>
+      <!-- TODO: Do I need the title attribute for the links -->
+        <a href="https://www.linkedin.com/in/markweig">
+          <svg id="linkedin" class="svg-icon">
+            <use xlink:href="assets/img/icons/icons.svg#icon-linkedin"></use>
+          </svg>
+          <div for="linkedin" class="mdl-tooltip mdl-tooltip--top mdl-tooltip--large">
+            See my LinkedIn profile
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="mailto:markweig@gmail.com?subject=Weigel.site Contact" "email me">
+          <span class="sr-only">email me at</span>
+          <svg id="email" class="svg-icon">
+            <use xlink:href="assets/img/icons/icons.svg#icon-email"></use>
+          </svg>
+          <div for="email" class="mdl-tooltip mdl-tooltip--top mdl-tooltip--large">
+            markweig@gmail.com
+          </div>
+        </a>
+      </li>
+      <li>
+      <!-- TODO: Handle desktop cases where click does nothing -->
+        <a href="tel:+12676032621">
+          <span class="sr-only">Call me at</span>
+          <svg id="phone" class="svg-icon">
+            <use xlink:href="assets/img/icons/icons.svg#icon-phone"></use>
+          </svg>
+          <div for="phone" class="mdl-tooltip mdl-tooltip--top mdl-tooltip--large">
+            1-267-603-2621
+          </div>
+        </a>
+      </li>
+    </ul>
   </section>
 </footer>
