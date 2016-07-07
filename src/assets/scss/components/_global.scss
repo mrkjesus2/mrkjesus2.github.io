@@ -22,3 +22,10 @@ section h1 {
     height: auto;
   }
 }
+
+$breakpoints: (
+  sml: 400px,
+  mid: 600px,
+  lrg: 800px,
+  xl: 1200px
+);

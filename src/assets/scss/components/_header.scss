@@ -2,21 +2,54 @@
 /* Header - Title Row */
 /**********************/
 .site-header__title-row {
-  // Viewport width - .picture-me height - .picture-me margins - .page-title marigins
+  // Viewport width - .picture-me height - .picture-me margins - .page-title margins
   min-height: calc(100vw - 36vw - 0.7em - 1em);
   width: 100%;
   padding: 0;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+
+  @media (min-width: map-get($breakpoints, sml)) {
+    flex-direction: row-reverse;
+    min-height: 0;
+    height: 90px;
+
+    & div {
+      margin: 0 .5em;
+    }
+  }
+
+  @media (min-width: map-get($breakpoints, mid)) {
+    & div {
+      margin: 0 2em;
+    }
+  }
+}
+
+.is-compact .site-header__title-row {
+  height: 56px;
+}
+
+.title-text {
+  @media (min-width: map-get($breakpoints, mid)) {
+    display: flex;
+  }
 }
 
 .page-title {
   margin: 0 0.5em;
+  @media (min-width: map-get($breakpoints, mid)) {
+    font-size: 1.5rem;
+    margin: 0 1.5em;
+  }
 }
 
 .page-subtitle {
   margin: 0;
+  @media (min-width: map-get($breakpoints, mid)) {
+    font-size: 1.2rem;
+  }
 }
 
 .is-compact .site-header__title-row {
@@ -33,6 +66,11 @@
   margin-bottom: 0.7em;
   border-radius: 50%;
   transition: width .2s, height .1s;
+
+  @media (min-width: map-get($breakpoints, sml)) {
+    height: 70px;
+    width: 70px;
+  }
 }
 
 .is-compact .picture-me {
@@ -41,15 +79,19 @@
   margin: 0 1em;
   // Move image to right when compact
   order: 2;
-}
 
-// Clear menu button down to 245px
-.is-compact h1 {
-  margin-left: 4em;
+  @media (min-width: map-get($breakpoints, sml)) {
+    height: 43px;
+    width: 43px;
+  }
 }
 
 .is-compact .page-subtitle {
   display: none;
+
+  @media (min-width: map-get($breakpoints, sml)) {
+    display: initial;
+  }
 }
 
 /*********************/
@@ -65,9 +107,11 @@
   margin-top: 1em;
 }
 
-.site-header__link-row nav {
+.site-header__link-row .mdl-navigation {
   width: 100%;
   justify-content: space-around;
+  max-width: 350px;
+  margin: 0 auto;
 }
 
 /*************************/
@@ -92,28 +136,13 @@
   display: initial;
 }
 
-@media screen and (min-width: 325px) {
-  .is-compact {
-    & .site-header__title-row {
-      justify-content: space-around;
-    }
-  }
-}
-@media screen and (min-width: 400px) {
-  .is-compact {
-    & .page-subtitle {
-      display: initial;
-    }
+// @media screen and (min-width: 325px) {
+//   .is-compact {
+//     & .site-header__title-row {
+//       justify-content: space-around;
+//     }
+//   }
+// }
 
-    & .picture-me {
-      height: 8vw;
-      width: 8vw;
-    }
-  }
-
-  .picture-me {
-    height: 42vw;
-    width: 42vw;
-  }
-}
 // TODO: Compact image is too big above 610px
+
