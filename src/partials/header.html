@@ -1,12 +1,16 @@
 <header class="mdl-layout__header mdl-layout__header--waterfall site-header">
   <!-- Top row, always visible -->
-  <section class="mdl-layout__header-row site-header__title-row">
+  <section class="mdl-layout__header-row site-header__title-row" aria-hidden="false">
     <!-- Title -->
     <div class="picture-me"></div>
+
+    <!-- Change tabindex when drawer is open?  -->
     <h1 class="page-title mdl-typography--title">Mark Weigel</h1>
     <h2 class="page-subtitle mdl-typography--subhead">Front End Developer</h2>
   </section>
   <!-- Bottom row, not visible on scroll -->
+
+  <!-- aria-hidden="true" when the drawer is open -->
   <section class="mdl-layout__header-row site-header__link-row">
     {{> nav-links}}
   </section>
@@ -15,4 +19,3 @@
 <div class="mdl-layout__drawer">
   {{> nav-links}}
 </div>
-

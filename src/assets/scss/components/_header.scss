@@ -74,6 +74,7 @@
 /* Header - Drawer Links */
 /*************************/
 .navigation__nested-links {
+  // Hide project links in fixed header
   display: none;
   @include typo-body-2(true);
   & a {
@@ -87,6 +88,7 @@
 }
 
 .is-visible .navigation__nested-links {
+  // Show project links in drawer
   display: initial;
 }
 
