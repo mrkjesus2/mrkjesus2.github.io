@@ -9,6 +9,11 @@ section h1 {
   text-align: center;
 }
 
+.mdl-grid {
+  justify-content: center;
+  max-width: 1200px;
+}
+
 .sr-only {
   position: absolute;
   left: -100%;

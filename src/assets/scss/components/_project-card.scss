@@ -6,17 +6,61 @@
 /*****************/
 /* Project Cards */
 /*****************/
-// To correct leading according to Material Design
+// For possible landscape problem fix
+.project-card {
+  // Can this work??
+  // flex-direction: row;
+}
 .mdl-card__title {
+  // To correct leading according to Material Design
   padding-bottom: 0;
+  // Fix Title wrapping while date is on the same line
+  flex-direction: column;
+  align-items: flex-start;
+
+  // Have to override MDL for the fix
+  & .mdl-card__title-text {
+    align-self: flex-start;
+  }
+
+  & p {
+    padding-top: 0.5em;
+  }
+}
+
+.mdl-card__supporting-text {
+  // Correct leading
+  padding-top: 0.5em;
+  // Ensure that project-card links are aligned
+  flex-grow: 1;
 }
 
 .project-card__date {
   padding-left: .5em;
 }
 
+// Prevent ugly pink background since image isn't covering
+.mdl-card__media {
+  background-color: initial;
+  text-align: center;
+}
+
+// Prevent the image from overtaking the screen
 .project-card img {
-  max-width: 100%;
+  // max-width: 100%;
+  max-height: 40vh;
+
+  @media (max-width: 349px) {
+    max-height: 30vh;
+  }
+
+  @media (min-width: 480px) and (max-width: 690px) {
+    max-height: 30vh;
+  }
+
+  @media (min-width: 840px) and (max-width: 1025px) {
+    max-height: 30vh;
+  }
 }
 
 .project-card:hover {
@@ -26,12 +70,12 @@
 .project-card__links {
   display: flex;
   justify-content: space-around;
+  // align-self: flex-end;
 }
 
-.project-card > .mdl-card__title {
-  // background: unquote("rgb(#{$color-primary-dark})");
-}
-
-.portfolio-header {
-  // position: relative;
+/* ******************************************* */
+/* The biggest problem to solve with the layout */
+/* ******************************************* */
+.solve-flexdirection-problem {
+  // Should only be used when height is smaller than width
 }

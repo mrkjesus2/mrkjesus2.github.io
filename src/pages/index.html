@@ -1,27 +1,29 @@
 <main class="mdl-layout__content">
   <!-- Portfolio -->
   <section id="portfolio" class="mdl-grid">
-    <h1 class="mdl-cell mdl-cell--12-col">Portfolio</h1>
+    <!-- <h1 class="mdl-cell mdl-cell--12-col">Portfolio</h1> -->
     {{#each project}}
-    <div class="card project-card mdl-card mdl-cell">
+    <div class="card project-card mdl-card mdl-cell"> <!-- mdl-cell--12-col -->
       <div class="mdl-card__media">
         <img src="{{this.img-url}}" alt="{{this.alt-text}}">
       </div>
-      <div class="mdl-card__title">
-        <h2 class="mdl-card__title-text">{{this.title}}</h2>
-          <p class="project-card__date mdl-card__subtitle-text">
-            - {{this.date-completed}}
-          </p>
-      </div>
-      <div class="mdl-card__supporting-text">{{this.short-desc}}</div>
-      <div class="project-card__links mdl-card__actions mdl-card--border">
-        <a href="project-{{@index}}.html" class="mdl-button mdl-js-button mdl-js-ripple-effect">
-          Read More
-        </a>
-        <a href="{{this.url}}" class="mdl-button mdl-js-button mdl-js-ripple-effect">
-          View Project
-        </a>
-      </div>
+      <!-- <div class="solve-flexdirection-problem mdl-cell--8-col"> -->
+        <div class="mdl-card__title">
+          <h2 class="mdl-card__title-text">{{this.title}}</h2>
+            <p class="project-card__date mdl-card__subtitle-text">
+              - {{this.date-completed}}
+            </p>
+        </div>
+        <div class="mdl-card__supporting-text">{{this.short-desc}}</div>
+        <div class="project-card__links mdl-card__actions mdl-card--border">
+          <a href="project-{{@index}}.html" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+            Read More
+          </a>
+          <a href="{{this.url}}" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+            View Project
+          </a>
+        </div>
+      <!-- </div> -->
     </div>
     {{/each}}
   </section>
