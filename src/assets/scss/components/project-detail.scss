@@ -1,9 +1,25 @@
 .project-detail {
-  & h3 {
+  // Override MDL so images wrap on larger screens
+  & .card {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  & .mdl-typography--headline {
     padding-top: 1rem;
   }
 
-  & p {
+  & .mdl-card__supporting-text {
     padding: 0;
+  }
+  // TODO: Reassess when actual images are used
+  // Keep image centered when max-height is hit
+  & .desc-img {
+    text-align: center;
+  }
+
+  & img {
+    max-width: 100%;
+    max-height: 350px;
   }
 }
