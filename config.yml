@@ -12,7 +12,13 @@ UNCSS_OPTIONS:
     - "src/**/*.html"
   ignore:
     - !!js/regexp .foundation-mq
-    - !!js/regexp ^\.is-.*
+    - !!js/regexp .*has.*
+    - !!js/regexp .*is.*
+  # media: May need if there are problems with media queries
+  #   -
+  timeout:
+    - 1000
+
 
 # Gulp will reference these paths when it copies files
 PATHS:

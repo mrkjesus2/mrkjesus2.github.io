@@ -17,7 +17,7 @@ const $ = plugins();
 const PRODUCTION = !!(yargs.argv.production);
 
 // Load settings from settings.yml
-const { COMPATIBILITY, PORT, UNCSS_OPTIONS, PATHS } = loadConfig();
+const { COMPATIBILITY, PORT, UNCSS_OPTIONS, PATHS, IMAGE_OPTIONS } = loadConfig();
 
 function loadConfig() {
   let ymlFile = fs.readFileSync('config.yml', 'utf8');
@@ -26,7 +26,7 @@ function loadConfig() {
 
 // Build the "dist" folder by running all of the below tasks
 gulp.task('build',
- gulp.series(clean, gulp.parallel(pages, sass, javascript, images, copy), styleGuide));
+ gulp.series(clean, gulp.parallel(pages, sass, images, javascript, copy), styleGuide));
 
 // Build the site, run the server, and watch for file changes
 gulp.task('default',
@@ -85,7 +85,8 @@ function sass() {
       browsers: COMPATIBILITY
     }))
     // Comment in the pipe below to run UnCSS in production
-    //.pipe($.if(PRODUCTION, $.uncss(UNCSS_OPTIONS)))
+    // TODO: I want to use UNCSS but have to solve problems (timeout for drawerbutton classes?)
+    // .pipe($.if(PRODUCTION, $.uncss(UNCSS_OPTIONS)))
     .pipe($.if(PRODUCTION, $.cssnano()))
     .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
     .pipe(gulp.dest(PATHS.dist + '/assets/css'))
@@ -106,13 +107,86 @@ function javascript() {
     .pipe(gulp.dest(PATHS.dist + '/assets/js'));
 }
 
+// See if you can make a function for this work
+
+// function resizeImages() {
+//   return gulp.src('src/assets/orig-images/**/*')
+//     .pipe($.responsiveImages({
+//       '*.*': [
+//         {
+//           width: 250,
+//           suffix: '-250'
+//           // quality: 25
+//         },{
+//           width: 500,
+//           suffix: '-500'
+//           // quality: 25
+//         },{
+//           width: 750,
+//           suffix: '-750',
+//           upscale: true
+//           // quality: 25
+//         },{
+//           width: 1000,
+//           suffix: '-1000',
+//           upscale: true
+//           // quality: 25
+//         },{
+//           width: 1500,
+//           suffix: '-1500',
+//           upscale: true
+//           // quality: 25
+//         },{
+//           width: 2000,
+//           suffix: '-2000',
+//           upscale: true
+//           // quality: 25
+//         }
+//       ]
+//     }))
+//     .pipe(gulp.dest('src/assets/img/'));
+// }
+
 // Copy images to the "dist" folder
 // In production, the images are compressed
 function images() {
-  return gulp.src('src/assets/img/**/*')
+  return gulp.src('src/assets/img/**/*.{jpg,gif,png}')
     .pipe($.if(PRODUCTION, $.imagemin({
       progressive: true
     })))
+    .pipe($.responsiveImages({
+      '*.*': [
+        {
+          width: 250,
+          suffix: '-250'
+          // quality: 25
+        },{
+          width: 500,
+          suffix: '-500'
+          // quality: 25
+        },{
+          width: 750,
+          suffix: '-750',
+          upscale: true
+          // quality: 25
+        },{
+          width: 1000,
+          suffix: '-1000',
+          upscale: true
+          // quality: 25
+        },{
+          width: 1500,
+          suffix: '-1500',
+          upscale: true
+          // quality: 25
+        },{
+          width: 2000,
+          suffix: '-2000',
+          upscale: true
+          // quality: 25
+        }
+      ]
+    }))
     .pipe(gulp.dest(PATHS.dist + '/assets/img'));
 }
 

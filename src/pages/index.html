@@ -5,7 +5,7 @@
     {{#each project}}
     <div class="card project-card mdl-card mdl-cell"> <!-- mdl-cell--12-col -->
       <div class="mdl-card__media">
-        <img src="{{this.img-url}}" alt="{{this.alt-text}}">
+        <img src="{{this.img-base}}-400.png" srcset="{{this.img-base}}-100.png 100w, {{this.img-base}}-250.png 250w, {{this.img-base}}-500.png 500w, {{this.img-base}}-750.png 750w, {{this.img-base}}-1000.png 1000w {{this.img-base}}-1500.png 1500w {{this.img-base}}-2000.png 2000w" alt="{{this.alt-text}}">
       </div>
       <!-- <div class="solve-flexdirection-problem mdl-cell--8-col"> -->
         <div class="mdl-card__title">
