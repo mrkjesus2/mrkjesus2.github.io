@@ -147,13 +147,13 @@ function javascript() {
 //     .pipe(gulp.dest('src/assets/img/'));
 // }
 
+var pngquant = require('imagemin-pngquant');
+var jpegCompress = require('imagemin-jpeg-recompress');
+
 // Copy images to the "dist" folder
 // In production, the images are compressed
 function images() {
   return gulp.src('src/assets/img/**/*.{jpg,gif,png}')
-    .pipe($.if(PRODUCTION, $.imagemin({
-      progressive: true
-    })))
     .pipe($.responsiveImages({
       '*.*': [
         {
@@ -166,13 +166,11 @@ function images() {
           // quality: 25
         },{
           width: 750,
-          suffix: '-750',
-          upscale: true
+          suffix: '-750'
           // quality: 25
         },{
           width: 1000,
-          suffix: '-1000',
-          upscale: true
+          suffix: '-1000'
           // quality: 25
         },{
           width: 1500,
@@ -187,7 +185,17 @@ function images() {
         }
       ]
     }))
-    .pipe(gulp.dest(PATHS.dist + '/assets/img'));
+    // .pipe($.if(PRODUCTION, $.imagemin(
+    //   [pngquant(), jpegCompress()],
+    //   {
+    //     verbose: true,
+    //     progressive: true
+    //   })))
+    // gulp-image uses the path from gulp.src(doesn't recognize the suffix)
+    // so we need to have the images copied into a folder before compression
+    .pipe($.if(PRODUCTION, gulp.dest('src/assets/img/resized/'), gulp.dest(PATHS.dist + '/assets/img')))
+    .pipe($.if(PRODUCTION, $.image() ))
+    .pipe($.if(PRODUCTION, gulp.dest(PATHS.dist + '/assets/img')));
 }
 
 // Start a server with BrowserSync to preview the site in
