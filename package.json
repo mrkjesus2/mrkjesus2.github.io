@@ -6,7 +6,7 @@
   "scripts": {
     "start": "gulp",
     "build": "gulp build --production",
-    "deploy": "cd dist && echo weigel.site > CNAME && git add --all && git commit -m \"Release at $(date)\" && git push"
+    "deploy": "cd dist && echo weigel.site > CNAME && git add --all && git commit -m \"Release at %date% %time%\" && git push"
   },
   "author": "ZURB <foundation@zurb.com>",
   "license": "MIT",
