@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mark Weigel's Portfolio Site</title>
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
+    <!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500"> -->
   </head>
   <body>
     <!-- The main layout out container for MDL -->
@@ -22,5 +22,22 @@
 
 
     <script src="{{root}}assets/js/app.js" async></script>
+    <script async>
+      WebFontConfig = {
+        google: {
+          families: ['Roboto:300,400,500', 'Material Icons']
+        }
+      };
+
+      (function(d) {
+        var wf = d.createElement('script');
+
+        console.log(d.scripts);
+        var s = d.scripts[0];
+
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js';
+        s.parentNode.insertBefore(wf, s);
+      })(document);
+    </script>
   </body>
 </html>
