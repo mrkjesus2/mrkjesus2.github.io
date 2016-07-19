@@ -1,0 +1,185 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Weigel's Portfolio Site</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500">
+  </head>
+  <body>
+    <!-- The main layout out container for MDL -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header mdl-layout__header--waterfall site-header">
+        <!-- Top row, always visible -->
+        <section class="mdl-layout__header-row site-header__title-row" aria-hidden="false">
+          <!-- Title -->
+          <div class="picture-me"></div>
+      
+          <div class="title-text">
+            <h1 class="page-title mdl-typography--title">Mark Weigel</h1>
+            <h2 class="page-subtitle mdl-typography--subhead">Front End Developer</h2>
+          </div>
+        </section>
+        <!-- Bottom row, not visible on scroll -->
+      
+        <section class="mdl-layout__header-row site-header__link-row">
+          <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="index.html">Portfolio</a>
+              <nav class="navigation__nested-links">
+                  <a href="Project-0.html" class="mdl-navigation__link navigation__nested-link">
+                    Neighborhood Map
+                  </a>
+                  <a href="Project-1.html" class="mdl-navigation__link navigation__nested-link">
+                    Frogger Clone
+                  </a>
+                  <a href="Project-2.html" class="mdl-navigation__link navigation__nested-link">
+                    Mobile Portfolio
+                  </a>
+                  <a href="Project-3.html" class="mdl-navigation__link navigation__nested-link">
+                    Resume Project
+                  </a>
+                  <a href="Project-4.html" class="mdl-navigation__link navigation__nested-link">
+                    Portfolio Site
+                  </a>
+              </nav>
+            <a class="mdl-navigation__link" href="about.html">About Me</a>
+            <a class="mdl-navigation__link" href="#footer">Contact</a>
+          </nav>
+          
+        </section>
+      </header>
+      
+      <div class="mdl-layout__drawer">
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="index.html">Portfolio</a>
+            <nav class="navigation__nested-links">
+                <a href="Project-0.html" class="mdl-navigation__link navigation__nested-link">
+                  Neighborhood Map
+                </a>
+                <a href="Project-1.html" class="mdl-navigation__link navigation__nested-link">
+                  Frogger Clone
+                </a>
+                <a href="Project-2.html" class="mdl-navigation__link navigation__nested-link">
+                  Mobile Portfolio
+                </a>
+                <a href="Project-3.html" class="mdl-navigation__link navigation__nested-link">
+                  Resume Project
+                </a>
+                <a href="Project-4.html" class="mdl-navigation__link navigation__nested-link">
+                  Portfolio Site
+                </a>
+            </nav>
+          <a class="mdl-navigation__link" href="about.html">About Me</a>
+          <a class="mdl-navigation__link" href="#footer">Contact</a>
+        </nav>
+        
+      </div>
+      
+
+      <!-- The main container, calls project-detail partial -->
+      <main class="mdl-layout__content">
+          <main class="mdl-layout">
+            <section class="mdl-grid project-detail">
+              <div class="card mdl-card mdl-cell--8-col">
+                <div class="mdl-card__title">
+                  <h1 class="mdl-card__title-text">Mobile Portfolio</h1>
+                </div>
+          
+                <h3 class="mdl-cell mdl-cell--12-col mdl-cell--2-offset-desktop mdl-typography--headline">Initial Step</h3>
+                <div class="mdl-cell mdl-cell--4-col-tablet">
+                  <p class="mdl-card__supporting-text">
+                    This is a bunch of stuff that I will want to say about the beginning phase of the project. I will have to talk about the inspiration of the project, the first steps that were taken, and how I decided what the next steps would be. Be thorough but concise.
+                  </p>
+                </div>
+                <div class="mdl-cell mdl-cell--4-col-tablet desc-img">
+                  <img src="assets/img/test-250.jpg" srcset="assets/img/test-250.jpg 250w, assets/img/test-500.jpg 500w, assets/img/test-750.jpg 750w, assets/img/test-1000.jpg 1000w" alt="TODO">
+                </div>
+          
+                <h3 class="mdl-cell mdl-cell--12-col mdl-cell--2-offset-desktop mdl-typography--headline">Next Step</h3>
+                <div class="mdl-cell mdl-cell--4-col-tablet desc-img">
+                  <img src="assets/img/test-1000.jpg" srcset="assets/img/test-250.jpg 250w, assets/img/test-500.jpg 500w, assets/img/test-750.jpg 750w, assets/img/test-1000.jpg 1000w" alt="TODO">
+                </div>
+                <div class="mdl-cell mdl-cell--4-col-tablet">
+                  <p class="mdl-card__supporting-text">
+                    A whole lot more of text about the project describing what happened next and why it was important. Include technical challenges and how you overcame them as well as why the solution was interesting
+                  </p>
+                </div>
+          
+                <h3 class="mdl-cell mdl-cell--12-col mdl-cell--2-offset-desktop mdl-typography--headline">Wrap Up</h3>
+                <div class="mdl-cell mdl-cell--4-col-tablet desc-img">
+                  <img src="assets/img/test-1000.jpg" srcset="assets/img/test-250.jpg 250w, assets/img/test-500.jpg 500w, assets/img/test-750.jpg 750w, assets/img/test-1000.jpg 1000w" alt="TODO">
+                </div>
+                <div class="mdl-cell mdl-cell--4-col-tablet">
+                  <p class="mdl-card__supporting-text">
+                    Talk about the successes of the project and why you are proud of your work. This is the time to really sell what you did and why people should think that you are the best thing since sliced bread.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </main>
+          
+        <footer id="footer" class="mdl-mini-footer">
+          <section class="mdl-mini-footer__left-section">
+            <div class="mdl-logo">Find Me</div>
+          </section>
+          <section class="mdl-mini-footer__right-section">
+            <ul class="mdl-mini-footer__link-list">
+              <li>
+                <a href="https://www.github.com/mrkjesus2">
+                  <svg id="github" class="svg-icon">
+                    <use xlink:href="assets/icons/icons.svg#icon-github"></use>
+                  </svg>
+                  <div for="github" class="mdl-tooltip mdl-tooltip--top mdl-tooltip--large">
+                    View my Github
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/markweig">
+                  <svg id="linkedin" class="svg-icon">
+                    <use xlink:href="assets/icons/icons.svg#icon-linkedin"></use>
+                  </svg>
+                  <div for="linkedin" class="mdl-tooltip mdl-tooltip--top mdl-tooltip--large">
+                    See my LinkedIn profile
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:markweig@gmail.com?subject=Weigel.site Contact" "email me">
+                  <span class="sr-only">email me at</span>
+                  <svg id="email" class="svg-icon">
+                    <use xlink:href="assets/icons/icons.svg#icon-email"></use>
+                  </svg>
+                  <div for="email" class="mdl-tooltip mdl-tooltip--top mdl-tooltip--large">
+                    markweig@gmail.com
+                  </div>
+                </a>
+              </li>
+              <li>
+              <!-- TODO: Handle desktop cases where click does nothing -->
+                <a href="tel:+12676032621">
+                  <span class="sr-only">Call me at</span>
+                  <svg id="phone" class="svg-icon">
+                    <use xlink:href="assets/icons/icons.svg#icon-phone"></use>
+                  </svg>
+                  <div for="phone" class="mdl-tooltip mdl-tooltip--top mdl-tooltip--large">
+                    1-267-603-2621
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </footer>
+        
+      </main>
+      
+    </div>
+
+
+    <script src="assets/js/app.js" async></script>
+  </body>
+</html>

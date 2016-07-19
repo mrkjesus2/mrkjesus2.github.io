@@ -1,1 +1,258 @@
-Hello World
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Weigel's Portfolio Site</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500">
+  </head>
+  <body>
+    <!-- The main layout out container for MDL -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header mdl-layout__header--waterfall site-header">
+        <!-- Top row, always visible -->
+        <section class="mdl-layout__header-row site-header__title-row" aria-hidden="false">
+          <!-- Title -->
+          <div class="picture-me"></div>
+      
+          <div class="title-text">
+            <h1 class="page-title mdl-typography--title">Mark Weigel</h1>
+            <h2 class="page-subtitle mdl-typography--subhead">Front End Developer</h2>
+          </div>
+        </section>
+        <!-- Bottom row, not visible on scroll -->
+      
+        <section class="mdl-layout__header-row site-header__link-row">
+          <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="index.html">Portfolio</a>
+              <nav class="navigation__nested-links">
+                  <a href="Project-0.html" class="mdl-navigation__link navigation__nested-link">
+                    Neighborhood Map
+                  </a>
+                  <a href="Project-1.html" class="mdl-navigation__link navigation__nested-link">
+                    Frogger Clone
+                  </a>
+                  <a href="Project-2.html" class="mdl-navigation__link navigation__nested-link">
+                    Mobile Portfolio
+                  </a>
+                  <a href="Project-3.html" class="mdl-navigation__link navigation__nested-link">
+                    Resume Project
+                  </a>
+                  <a href="Project-4.html" class="mdl-navigation__link navigation__nested-link">
+                    Portfolio Site
+                  </a>
+              </nav>
+            <a class="mdl-navigation__link" href="about.html">About Me</a>
+            <a class="mdl-navigation__link" href="#footer">Contact</a>
+          </nav>
+          
+        </section>
+      </header>
+      
+      <div class="mdl-layout__drawer">
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="index.html">Portfolio</a>
+            <nav class="navigation__nested-links">
+                <a href="Project-0.html" class="mdl-navigation__link navigation__nested-link">
+                  Neighborhood Map
+                </a>
+                <a href="Project-1.html" class="mdl-navigation__link navigation__nested-link">
+                  Frogger Clone
+                </a>
+                <a href="Project-2.html" class="mdl-navigation__link navigation__nested-link">
+                  Mobile Portfolio
+                </a>
+                <a href="Project-3.html" class="mdl-navigation__link navigation__nested-link">
+                  Resume Project
+                </a>
+                <a href="Project-4.html" class="mdl-navigation__link navigation__nested-link">
+                  Portfolio Site
+                </a>
+            </nav>
+          <a class="mdl-navigation__link" href="about.html">About Me</a>
+          <a class="mdl-navigation__link" href="#footer">Contact</a>
+        </nav>
+        
+      </div>
+      
+
+      <main class="mdl-layout__content">
+        <!-- Portfolio -->
+        <section id="portfolio" class="mdl-grid">
+          <!-- <h1 class="mdl-cell mdl-cell--12-col">Portfolio</h1> -->
+          <div class="card project-card mdl-card mdl-cell"> <!-- mdl-cell--12-col -->
+            <div class="mdl-card__media">
+              <img src="assets/img/NeighborhoodMap-400.png" srcset="assets/img/NeighborhoodMap-100.png 100w, assets/img/NeighborhoodMap-250.png 250w, assets/img/NeighborhoodMap-500.png 500w, assets/img/NeighborhoodMap-750.png 750w, assets/img/NeighborhoodMap-1000.png 1000w, assets/img/NeighborhoodMap-1500.png 1500w, assets/img/NeighborhoodMap-2000.png 2000w" alt="">
+            </div>
+            <!-- <div class="solve-flexdirection-problem mdl-cell--8-col"> -->
+              <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">Neighborhood Map</h2>
+                  <p class="project-card__date mdl-card__subtitle-text">
+                    - Feb 2016
+                  </p>
+              </div>
+              <div class="mdl-card__supporting-text">This is a project that I completed as part of my Front End Nanodegree at Udacity.com. It uses the Wikipedia, Foursquare, Google Maps, and Google Places APIs and AJAX calls to provide data about interesting places in my neighborhood. It was built using knockout.js for two-way data-binding.</div>
+              <div class="project-card__links mdl-card__actions mdl-card--border">
+                <a href="project-0.html" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                  Read More
+                </a>
+                <a href="weigel.site/Neighborhood-Map" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                  View Project
+                </a>
+              </div>
+            <!-- </div> -->
+          </div>
+          <div class="card project-card mdl-card mdl-cell"> <!-- mdl-cell--12-col -->
+            <div class="mdl-card__media">
+              <img src="assets/img/frogger-400.png" srcset="assets/img/frogger-100.png 100w, assets/img/frogger-250.png 250w, assets/img/frogger-500.png 500w, assets/img/frogger-750.png 750w, assets/img/frogger-1000.png 1000w, assets/img/frogger-1500.png 1500w, assets/img/frogger-2000.png 2000w" alt="">
+            </div>
+            <!-- <div class="solve-flexdirection-problem mdl-cell--8-col"> -->
+              <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">Frogger Clone</h2>
+                  <p class="project-card__date mdl-card__subtitle-text">
+                    - Nov 2015
+                  </p>
+              </div>
+              <div class="mdl-card__supporting-text">I completed this project as part of the Udacity.com Front End Nanodegree. I was provided with all of the sprites for the game as well as a game engine. My job was to write the prototypes for the different objects(i.e. player, gems, and enemies) as well as write the collision logic. I decided that I also wanted to add score keeping as well as a nifty start screen that was drawn using HTML Canvas.</div>
+              <div class="project-card__links mdl-card__actions mdl-card--border">
+                <a href="project-1.html" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                  Read More
+                </a>
+                <a href="weigel.site/Frogger-Clone" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                  View Project
+                </a>
+              </div>
+            <!-- </div> -->
+          </div>
+          <div class="card project-card mdl-card mdl-cell"> <!-- mdl-cell--12-col -->
+            <div class="mdl-card__media">
+              <img src="assets/img/MobilePortfolio-400.png" srcset="assets/img/MobilePortfolio-100.png 100w, assets/img/MobilePortfolio-250.png 250w, assets/img/MobilePortfolio-500.png 500w, assets/img/MobilePortfolio-750.png 750w, assets/img/MobilePortfolio-1000.png 1000w, assets/img/MobilePortfolio-1500.png 1500w, assets/img/MobilePortfolio-2000.png 2000w" alt="">
+            </div>
+            <!-- <div class="solve-flexdirection-problem mdl-cell--8-col"> -->
+              <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">Mobile Portfolio</h2>
+                  <p class="project-card__date mdl-card__subtitle-text">
+                    - Dec 2015
+                  </p>
+              </div>
+              <div class="mdl-card__supporting-text">The primary goal of this Udacity.com project was to focus on performance. By moving document queries out of loops I was able to speed this site up significantally. The page started out with a Page Speed Insights mobile score in the 70s which I was able to improve to a score of 95.</div>
+              <div class="project-card__links mdl-card__actions mdl-card--border">
+                <a href="project-2.html" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                  Read More
+                </a>
+                <a href="weigel.site/Mobile-Portfolio" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                  View Project
+                </a>
+              </div>
+            <!-- </div> -->
+          </div>
+          <div class="card project-card mdl-card mdl-cell"> <!-- mdl-cell--12-col -->
+            <div class="mdl-card__media">
+              <img src="assets/img/Resume-400.png" srcset="assets/img/Resume-100.png 100w, assets/img/Resume-250.png 250w, assets/img/Resume-500.png 500w, assets/img/Resume-750.png 750w, assets/img/Resume-1000.png 1000w, assets/img/Resume-1500.png 1500w, assets/img/Resume-2000.png 2000w" alt="">
+            </div>
+            <!-- <div class="solve-flexdirection-problem mdl-cell--8-col"> -->
+              <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">Resume Project</h2>
+                  <p class="project-card__date mdl-card__subtitle-text">
+                    - Oct 2015
+                  </p>
+              </div>
+              <div class="mdl-card__supporting-text">My resume project for Udacity.com&#x27;s Front End Nanodegree. This was an exercise in using JSON objects for data-binding. It also provide a very brief encounter with the Google Maps API. The purpose of this project was to lay the groundwork for future projects that would rely more on external data.</div>
+              <div class="project-card__links mdl-card__actions mdl-card--border">
+                <a href="project-3.html" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                  Read More
+                </a>
+                <a href="weigel.site/Resume" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                  View Project
+                </a>
+              </div>
+            <!-- </div> -->
+          </div>
+          <div class="card project-card mdl-card mdl-cell"> <!-- mdl-cell--12-col -->
+            <div class="mdl-card__media">
+              <img src="assets/img/Portfolio-400.png" srcset="assets/img/Portfolio-100.png 100w, assets/img/Portfolio-250.png 250w, assets/img/Portfolio-500.png 500w, assets/img/Portfolio-750.png 750w, assets/img/Portfolio-1000.png 1000w, assets/img/Portfolio-1500.png 1500w, assets/img/Portfolio-2000.png 2000w" alt="">
+            </div>
+            <!-- <div class="solve-flexdirection-problem mdl-cell--8-col"> -->
+              <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">Portfolio Site</h2>
+                  <p class="project-card__date mdl-card__subtitle-text">
+                    - Sept 2015
+                  </p>
+              </div>
+              <div class="mdl-card__supporting-text">In my first project for my Front End Nanodegree I was given the equivalent of a Photoshop comp and given the task of styling the page to the comps specifications. Having no projects to highlight, I used some photography that I have shot.</div>
+              <div class="project-card__links mdl-card__actions mdl-card--border">
+                <a href="project-4.html" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                  Read More
+                </a>
+                <a href="weigel.site/Portfolio" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                  View Project
+                </a>
+              </div>
+            <!-- </div> -->
+          </div>
+        </section>
+        <footer id="footer" class="mdl-mini-footer">
+          <section class="mdl-mini-footer__left-section">
+            <div class="mdl-logo">Find Me</div>
+          </section>
+          <section class="mdl-mini-footer__right-section">
+            <ul class="mdl-mini-footer__link-list">
+              <li>
+                <a href="https://www.github.com/mrkjesus2">
+                  <svg id="github" class="svg-icon">
+                    <use xlink:href="assets/icons/icons.svg#icon-github"></use>
+                  </svg>
+                  <div for="github" class="mdl-tooltip mdl-tooltip--top mdl-tooltip--large">
+                    View my Github
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/markweig">
+                  <svg id="linkedin" class="svg-icon">
+                    <use xlink:href="assets/icons/icons.svg#icon-linkedin"></use>
+                  </svg>
+                  <div for="linkedin" class="mdl-tooltip mdl-tooltip--top mdl-tooltip--large">
+                    See my LinkedIn profile
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:markweig@gmail.com?subject=Weigel.site Contact" "email me">
+                  <span class="sr-only">email me at</span>
+                  <svg id="email" class="svg-icon">
+                    <use xlink:href="assets/icons/icons.svg#icon-email"></use>
+                  </svg>
+                  <div for="email" class="mdl-tooltip mdl-tooltip--top mdl-tooltip--large">
+                    markweig@gmail.com
+                  </div>
+                </a>
+              </li>
+              <li>
+              <!-- TODO: Handle desktop cases where click does nothing -->
+                <a href="tel:+12676032621">
+                  <span class="sr-only">Call me at</span>
+                  <svg id="phone" class="svg-icon">
+                    <use xlink:href="assets/icons/icons.svg#icon-phone"></use>
+                  </svg>
+                  <div for="phone" class="mdl-tooltip mdl-tooltip--top mdl-tooltip--large">
+                    1-267-603-2621
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </footer>
+        
+      </main>
+      
+    </div>
+
+
+    <script src="assets/js/app.js" async></script>
+  </body>
+</html>
