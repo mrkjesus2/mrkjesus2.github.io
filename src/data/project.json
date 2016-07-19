@@ -15,7 +15,7 @@
     "outro-pic-alt": "TODO",
     "long-desc": "TODO",
     "date-completed": "Feb 2016",
-    "url": "weigel.site/Neighborhood-Map",
+    "url": "Neighborhood-Map",
     "tech-used": "HTML, CSS, Knockout.js, AJAX, Various APIs"
   },{
     "title": "Frogger Clone",
@@ -33,7 +33,7 @@
     "outro-pic-alt": "TODO",
     "long-desc": "TODO",
     "date-completed": "Nov 2015",
-    "url": "weigel.site/Frogger-Clone",
+    "url": "Frogger-Clone",
     "tech-used": "HTML Canvas, Javascript, TODO"
   },{
     "title": "Mobile Portfolio",
@@ -51,7 +51,7 @@
     "outro-pic-alt": "TODO",
     "long-desc": "TODO",
     "date-completed": "Dec 2015",
-    "url": "weigel.site/Mobile-Portfolio",
+    "url": "Mobile-Portfolio",
     "tech-used": "Javascript refactoring"
   },{
     "title": "Resume Project",
@@ -69,7 +69,7 @@
     "outro-pic-alt": "TODO",
     "long-desc": "TODO",
     "date-completed": "Oct 2015",
-    "url": "weigel.site/Resume",
+    "url": "Resume",
     "tech-used": "HTML, CSS, Javascript, JQuery"
   },{
     "title": "Portfolio Site",
@@ -87,7 +87,7 @@
     "outro-pic-alt": "TODO",
     "long-desc": "TODO",
     "date-completed": "Sept 2015",
-    "url": "weigel.site/Portfolio",
+    "url": "Portfolio",
     "tech-used": "HTML, CSS, Grunt"
   }
 ]
