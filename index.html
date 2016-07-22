@@ -45,7 +45,7 @@
                   </a>
               </nav>
             <a class="mdl-navigation__link" href="about.html">About Me</a>
-            <a class="mdl-navigation__link" href="#footer">Contact</a>
+            <a type="button" class="mdl-navigation__link show-dialog" href="#">Contact</a>
           </nav>
           
         </section>
@@ -72,7 +72,7 @@
                 </a>
             </nav>
           <a class="mdl-navigation__link" href="about.html">About Me</a>
-          <a class="mdl-navigation__link" href="#footer">Contact</a>
+          <a type="button" class="mdl-navigation__link show-dialog" href="#">Contact</a>
         </nav>
         
       </div>
@@ -95,10 +95,10 @@
               </div>
               <div class="mdl-card__supporting-text">This is a project that I completed as part of my Front End Nanodegree at Udacity.com. It uses the Wikipedia, Foursquare, Google Maps, and Google Places APIs and AJAX calls to provide data about interesting places in my neighborhood. It was built using knockout.js for two-way data-binding.</div>
               <div class="project-card__links mdl-card__actions mdl-card--border">
-                <a href="project-0.html" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                <a href="project-0.html" class="mdl-button mdl-button--raised mdl-button--accent mdl-js-button mdl-js-ripple-effect">
                   Read More
                 </a>
-                <a href="Neighborhood-Map" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                <a href="Neighborhood-Map" class="mdl-button mdl-button--raised mdl-button--accent mdl-js-button mdl-js-ripple-effect">
                   View Project
                 </a>
               </div>
@@ -117,10 +117,10 @@
               </div>
               <div class="mdl-card__supporting-text">I completed this project as part of the Udacity.com Front End Nanodegree. I was provided with all of the sprites for the game as well as a game engine. My job was to write the prototypes for the different objects(i.e. player, gems, and enemies) as well as write the collision logic. I decided that I also wanted to add score keeping as well as a nifty start screen that was drawn using HTML Canvas.</div>
               <div class="project-card__links mdl-card__actions mdl-card--border">
-                <a href="project-1.html" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                <a href="project-1.html" class="mdl-button mdl-button--raised mdl-button--accent mdl-js-button mdl-js-ripple-effect">
                   Read More
                 </a>
-                <a href="Frogger-Clone" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                <a href="Frogger-Clone" class="mdl-button mdl-button--raised mdl-button--accent mdl-js-button mdl-js-ripple-effect">
                   View Project
                 </a>
               </div>
@@ -139,10 +139,10 @@
               </div>
               <div class="mdl-card__supporting-text">The primary goal of this Udacity.com project was to focus on performance. By moving document queries out of loops I was able to speed this site up significantally. The page started out with a Page Speed Insights mobile score in the 70s which I was able to improve to a score of 95.</div>
               <div class="project-card__links mdl-card__actions mdl-card--border">
-                <a href="project-2.html" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                <a href="project-2.html" class="mdl-button mdl-button--raised mdl-button--accent mdl-js-button mdl-js-ripple-effect">
                   Read More
                 </a>
-                <a href="Mobile-Portfolio" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                <a href="Mobile-Portfolio" class="mdl-button mdl-button--raised mdl-button--accent mdl-js-button mdl-js-ripple-effect">
                   View Project
                 </a>
               </div>
@@ -161,10 +161,10 @@
               </div>
               <div class="mdl-card__supporting-text">My resume project for Udacity.com&#x27;s Front End Nanodegree. This was an exercise in using JSON objects for data-binding. It also provide a very brief encounter with the Google Maps API. The purpose of this project was to lay the groundwork for future projects that would rely more on external data.</div>
               <div class="project-card__links mdl-card__actions mdl-card--border">
-                <a href="project-3.html" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                <a href="project-3.html" class="mdl-button mdl-button--raised mdl-button--accent mdl-js-button mdl-js-ripple-effect">
                   Read More
                 </a>
-                <a href="Resume" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                <a href="Resume" class="mdl-button mdl-button--raised mdl-button--accent mdl-js-button mdl-js-ripple-effect">
                   View Project
                 </a>
               </div>
@@ -183,10 +183,10 @@
               </div>
               <div class="mdl-card__supporting-text">In my first project for my Front End Nanodegree I was given the equivalent of a Photoshop comp and given the task of styling the page to the comps specifications. Having no projects to highlight, I used some photography that I have shot.</div>
               <div class="project-card__links mdl-card__actions mdl-card--border">
-                <a href="project-4.html" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                <a href="project-4.html" class="mdl-button mdl-button--raised mdl-button--accent mdl-js-button mdl-js-ripple-effect">
                   Read More
                 </a>
-                <a href="Portfolio" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                <a href="Portfolio" class="mdl-button mdl-button--raised mdl-button--accent mdl-js-button mdl-js-ripple-effect">
                   View Project
                 </a>
               </div>
@@ -250,7 +250,21 @@
       
     </div>
 
-
+    <dialog class="mdl-dialog">
+      <h4 class="mdl-dialog-title">Get a hold of me!</h4>
+      <div class="mdl-dialog__content">
+        <p>
+          Email is the best way to get a hold of me, but feel free to call
+          if it is a reasonable hour in GMT -5.
+        </p>
+      </div>
+      <div class="mdl-dialog__actions mdl-dialog__actions--full-width">
+        <a href="mailto:markweig@gmail.com?Weigel.site Contact" class="mdl-button mdl-button--accent">Email Me</a>
+        <a href="tel:2676032621" class="mdl-button mdl-button--accent">Call Me</a>
+        <a href="#" class="mdl-button close">Nevermind</a>
+      </div>
+    </dialog>
+    
     <script src="assets/js/app.js" async></script>
     <!-- Use Web Font Loader to prevent render blocking -->
     <script async>
