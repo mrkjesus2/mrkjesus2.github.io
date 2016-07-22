@@ -8,4 +8,13 @@
 
 .about-card {
   max-width: 550px;
+
+  // About screen is sparse - Keep the footer toward the bottom
+  @media (min-height: 730px) {
+    margin: 5vh 0 10vh;
+  }
+
+  @media (min-height: 860px) {
+    margin: 10vh 0 15vh;
+  }
 }
