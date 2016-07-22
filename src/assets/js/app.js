@@ -85,5 +85,35 @@ window.addEventListener('load', function() {
       els[i].setAttribute('tabindex', val);
     }
   }
+
+  // Register the Contact Modal
+  (function registerModal() {
+    var dialog = document.querySelector('dialog');
+    var showDialogButtons = document.querySelectorAll('.show-dialog');
+    var drawerButton = document.querySelector('.mdl-layout__drawer-button');
+
+    // Check for 'dialog' element support in browser - Register if not
+    if (!dialog.showModal) {
+      dialogPolyfill.registerDialog(dialog);
+    }
+
+    // Show the modal on click of "Contact" link
+    showDialogButtons.forEach(function(el, idx) {
+      el.addEventListener('click', function() {
+        // If the drawer is open, close it first
+        if (document.querySelector('.is-visible')) {
+          drawerButton.click();
+          dialog.showModal();
+        } else {
+          dialog.showModal();
+        }
+      });
+    });
+
+    // Close the modal
+    dialog.querySelector('.close').addEventListener('click', function() {
+      dialog.close();
+    });
+  })();
 });
 

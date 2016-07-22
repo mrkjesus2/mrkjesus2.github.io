@@ -31,8 +31,9 @@ PATHS:
   # Paths to Sass libraries, which can then be loaded with @import
   sass:
     # - "bower_components/foundation-sites/scss"
-    - "bower_components/motion-ui/src"
+    # - "bower_components/motion-ui/src"
     - "bower_components/material-design-lite/src"
+    - "bower_components/dialog-polyfill/"
   # Paths to JavaScript libraries, which are compined into one file
   javascript:
     # Libraries requried by Foundation
@@ -64,6 +65,7 @@ PATHS:
     # - "bower_components/foundation-sites/js/foundation.tooltip.js"
     #  Material Design files
     - "bower_components/material-design-lite/material.js"
+    - "bower_components/dialog-polyfill/dialog-polyfill.js"
     # Paths to your own project code are here
     - "src/assets/js/!(app).js"
     - "src/assets/js/app.js"

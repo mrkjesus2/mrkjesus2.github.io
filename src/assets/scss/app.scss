@@ -19,7 +19,7 @@
 @import "card/card";
 // @import "checkbox/checkbox";
 // @import "data-table/data-table";
-// @import "dialog/dialog";
+@import "dialog/dialog";
 // @import "footer/mega_footer";
 @import "footer/mini_footer";
 @import "icon-toggle/icon-toggle";
@@ -38,6 +38,8 @@
 @import "shadow/shadow";
 @import "grid/grid";
 
+// Dialog-Polyfill - Note the file extension has to be changed from css to scss
+@import "dialog-polyfill";
 
 // My custom SCSS
 @import "components/global";
