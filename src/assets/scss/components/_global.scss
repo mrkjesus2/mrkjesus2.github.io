@@ -14,6 +14,10 @@ section h1 {
   max-width: 1200px;
 }
 
+.mdl-button:hover {
+  @include shadow-4dp();
+}
+
 .sr-only {
   position: absolute;
   left: -100%;

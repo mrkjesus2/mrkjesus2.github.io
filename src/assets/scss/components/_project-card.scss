@@ -70,7 +70,14 @@
 .project-card__links {
   display: flex;
   justify-content: space-around;
-  // align-self: flex-end;
+
+  @media (min-width: 480px) and (max-width: 580px) {
+    flex-direction: column;
+
+    & a {
+      margin-bottom: 0.5em;
+    }
+  }
 }
 
 /* ******************************************* */
