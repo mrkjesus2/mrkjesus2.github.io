@@ -1,14 +1,14 @@
 'use strict';
 
-import plugins  from 'gulp-load-plugins';
-import yargs    from 'yargs';
-import browser  from 'browser-sync';
-import gulp     from 'gulp';
-import panini   from 'panini';
-import rimraf   from 'rimraf';
-import sherpa   from 'style-sherpa';
-import yaml     from 'js-yaml';
-import fs       from 'fs';
+import plugins from 'gulp-load-plugins';
+import yargs from 'yargs';
+import browser from 'browser-sync';
+import gulp from 'gulp';
+import panini from 'panini';
+import rimraf from 'rimraf';
+import sherpa from 'style-sherpa';
+import yaml from 'js-yaml';
+import fs from 'fs';
 
 // Load all Gulp plugins into one variable
 const $ = plugins();
@@ -26,7 +26,7 @@ function loadConfig() {
 
 // Build the "dist" folder by running all of the below tasks
 gulp.task('build',
- gulp.series(clean, gulp.parallel(pages, sass, images, javascript, copy), styleGuide));
+  gulp.series(clean, gulp.parallel(pages, sass, images, javascript, copy), styleGuide));
 
 // Build the site, run the server, and watch for file changes
 gulp.task('default',
@@ -90,7 +90,7 @@ function sass() {
     .pipe($.if(PRODUCTION, $.cssnano()))
     .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
     .pipe(gulp.dest(PATHS.dist + '/assets/css'))
-    .pipe(browser.reload({ stream: true }));
+    .pipe(browser.reload({stream: true}));
 }
 
 // Combine JavaScript into one file
@@ -160,24 +160,24 @@ function images() {
           width: 250,
           suffix: '-250'
           // quality: 25
-        },{
+        }, {
           width: 500,
           suffix: '-500'
           // quality: 25
-        },{
+        }, {
           width: 750,
           suffix: '-750'
           // quality: 25
-        },{
+        }, {
           width: 1000,
           suffix: '-1000'
           // quality: 25
-        },{
+        }, {
           width: 1500,
           suffix: '-1500',
           upscale: true
           // quality: 25
-        },{
+        }, {
           width: 2000,
           suffix: '-2000',
           upscale: true
@@ -194,7 +194,7 @@ function images() {
     // gulp-image uses the path from gulp.src(doesn't recognize the suffix)
     // so we need to have the images copied into a folder before compression
     .pipe($.if(PRODUCTION, gulp.dest('src/assets/img/resized/'), gulp.dest(PATHS.dist + '/assets/img')))
-    .pipe($.if(PRODUCTION, $.image() ))
+    .pipe($.if(PRODUCTION, $.image()))
     .pipe($.if(PRODUCTION, gulp.dest(PATHS.dist + '/assets/img')));
 }
 
