@@ -38,3 +38,8 @@ $breakpoints: (
   lrg: 800px,
   xl: 1200px
 );
+
+// will-change: transform caused blurry tooltips on Chrome 53
+.mdl-tooltip {
+  will-change: initial;
+}
