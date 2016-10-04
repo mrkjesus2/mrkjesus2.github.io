@@ -1,0 +1,230 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Weigel's Portfolio Site</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+  </head>
+  <body>
+    <!-- The main layout out container for MDL -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header mdl-layout__header--waterfall site-header">
+        <!-- Top row, always visible -->
+        <section class="mdl-layout__header-row site-header__title-row" aria-hidden="false">
+          <!-- Title -->
+          <div class="picture-me"></div>
+      
+          <div class="title-text">
+            <h1 class="page-title mdl-typography--title">Mark Weigel</h1>
+            <h2 class="page-subtitle mdl-typography--subhead">Front End Developer</h2>
+          </div>
+        </section>
+        <!-- Bottom row, not visible on scroll -->
+      
+        <section class="mdl-layout__header-row site-header__link-row">
+          <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="index.html">Portfolio</a>
+              <nav class="navigation__nested-links">
+                  <a href="project-0.html" class="mdl-navigation__link navigation__nested-link">
+                    GOATOOLS GO Grouping
+                  </a>
+                  <a href="project-1.html" class="mdl-navigation__link navigation__nested-link">
+                    Dapper Goose Website
+                  </a>
+                  <a href="project-2.html" class="mdl-navigation__link navigation__nested-link">
+                    Neighborhood Map
+                  </a>
+                  <a href="project-3.html" class="mdl-navigation__link navigation__nested-link">
+                    Frogger Clone
+                  </a>
+                  <a href="project-4.html" class="mdl-navigation__link navigation__nested-link">
+                    Mobile Portfolio
+                  </a>
+                  <a href="project-5.html" class="mdl-navigation__link navigation__nested-link">
+                    Resume Project
+                  </a>
+                  <a href="project-6.html" class="mdl-navigation__link navigation__nested-link">
+                    Portfolio Site
+                  </a>
+              </nav>
+            <a class="mdl-navigation__link" href="about.html">About Me</a>
+            <a type="button" class="mdl-navigation__link show-dialog" href="#">Contact</a>
+          </nav>
+          
+        </section>
+      </header>
+      
+      <div class="mdl-layout__drawer">
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="index.html">Portfolio</a>
+            <nav class="navigation__nested-links">
+                <a href="project-0.html" class="mdl-navigation__link navigation__nested-link">
+                  GOATOOLS GO Grouping
+                </a>
+                <a href="project-1.html" class="mdl-navigation__link navigation__nested-link">
+                  Dapper Goose Website
+                </a>
+                <a href="project-2.html" class="mdl-navigation__link navigation__nested-link">
+                  Neighborhood Map
+                </a>
+                <a href="project-3.html" class="mdl-navigation__link navigation__nested-link">
+                  Frogger Clone
+                </a>
+                <a href="project-4.html" class="mdl-navigation__link navigation__nested-link">
+                  Mobile Portfolio
+                </a>
+                <a href="project-5.html" class="mdl-navigation__link navigation__nested-link">
+                  Resume Project
+                </a>
+                <a href="project-6.html" class="mdl-navigation__link navigation__nested-link">
+                  Portfolio Site
+                </a>
+            </nav>
+          <a class="mdl-navigation__link" href="about.html">About Me</a>
+          <a type="button" class="mdl-navigation__link show-dialog" href="#">Contact</a>
+        </nav>
+        
+      </div>
+      
+
+      <!-- The main container, calls project-detail partial -->
+      <main class="mdl-layout__content">
+          <main class="mdl-layout">
+            <section class="mdl-grid project-detail">
+              <div class="card mdl-card mdl-cell--8-col">
+                <div class="mdl-card__title">
+                  <h1 class="mdl-card__title-text">Resume Project</h1>
+                </div>
+          
+                <h3 class="mdl-cell mdl-cell--12-col mdl-cell--2-offset-desktop mdl-typography--headline">Initial Step</h3>
+                <div class="mdl-cell mdl-cell--4-col-tablet">
+                  <p class="mdl-card__supporting-text">
+                    The first step in this project was to create JSON objects to represent my education, employment, and project history.
+                  </p>
+                </div>
+                <div class="mdl-cell mdl-cell--4-col-tablet desc-img">
+                  <img src="assets/img/Resume-work-250.png" srcset="assets/img/Resume-work-250.png 250w, assets/img/Resume-work-500.png 500w, assets/img/Resume-work-750.png 750w, assets/img/Resume-work-1000.png 1000w" alt="Screenshot of resume site">
+                </div>
+          
+                <h3 class="mdl-cell mdl-cell--12-col mdl-cell--2-offset-desktop mdl-typography--headline">Next Step</h3>
+                <div class="mdl-cell mdl-cell--4-col-tablet desc-img">
+                  <img src="assets/img/Resume-projects-1000.png" srcset="assets/img/Resume-projects-250.png 250w, assets/img/Resume-projects-500.png 500w, assets/img/Resume-projects-750.png 750w, assets/img/Resume-projects-1000.png 1000w" alt="Screenshot of resume site">
+                </div>
+                <div class="mdl-cell mdl-cell--4-col-tablet">
+                  <p class="mdl-card__supporting-text">
+                    With the JSON objects that I wrote, and the HTML snippets with placeholders that were given to me, the next step was to write display functions. I used string replacement to put the appropriate information in place of the placeholder.
+                  </p>
+                </div>
+          
+                <h3 class="mdl-cell mdl-cell--12-col mdl-cell--2-offset-desktop mdl-typography--headline">Wrap Up</h3>
+                <div class="mdl-cell mdl-cell--4-col-tablet desc-img">
+                  <img src="assets/img/Resume-education-1000.png" srcset="assets/img/Resume-education-250.png 250w, assets/img/Resume-education-500.png 500w, assets/img/Resume-education-750.png 750w, assets/img/Resume-education-1000.png 1000w" alt="Screenshot of resume site">
+                </div>
+                <div class="mdl-cell mdl-cell--4-col-tablet">
+                  <p class="mdl-card__supporting-text">
+                    Finally, I added a google map that showed the locations where I have worked as well as some JQuery animations to make it nice.
+                  </p>
+                </div>
+                <div class="project-card__links mdl-card__actions mdl-card--border">
+                  <a href="Resume" class="mdl-button mdl-button--raised mdl-button--accent mdl-js-button mdl-js-ripple-effect">
+                      View Project
+                  </a>
+                </div>
+              </div>
+            </section>
+          </main>
+          
+        <footer id="footer" class="mdl-mini-footer">
+          <section class="mdl-mini-footer__left-section">
+            <div class="mdl-logo">Find Me</div>
+          </section>
+          <section class="mdl-mini-footer__right-section">
+            <ul class="mdl-mini-footer__link-list">
+              <li>
+                <a href="https://www.github.com/mrkjesus2">
+                  <svg id="github" class="svg-icon">
+                    <use xlink:href="assets/icons/icons.svg#icon-github"></use>
+                  </svg>
+                  <div for="github" class="mdl-tooltip mdl-tooltip--top mdl-tooltip--large">
+                    View my Github
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/markweig">
+                  <svg id="linkedin" class="svg-icon">
+                    <use xlink:href="assets/icons/icons.svg#icon-linkedin"></use>
+                  </svg>
+                  <div for="linkedin" class="mdl-tooltip mdl-tooltip--top mdl-tooltip--large">
+                    See my LinkedIn profile
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:markweig@gmail.com?subject=Weigel.site Contact" "email me">
+                  <span class="sr-only">email me at</span>
+                  <svg id="email" class="svg-icon">
+                    <use xlink:href="assets/icons/icons.svg#icon-email"></use>
+                  </svg>
+                  <div for="email" class="mdl-tooltip mdl-tooltip--top mdl-tooltip--large">
+                    markweig@gmail.com
+                  </div>
+                </a>
+              </li>
+              <li>
+              <!-- TODO: Handle desktop cases where click does nothing -->
+                <a href="tel:+12676032621">
+                  <span class="sr-only">Call me at</span>
+                  <svg id="phone" class="svg-icon">
+                    <use xlink:href="assets/icons/icons.svg#icon-phone"></use>
+                  </svg>
+                  <div for="phone" class="mdl-tooltip mdl-tooltip--top mdl-tooltip--large">
+                    1-267-603-2621
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </footer>
+        
+      </main>
+      
+    </div>
+
+    <dialog class="mdl-dialog">
+      <h4 class="mdl-dialog-title">Get a hold of me!</h4>
+      <div class="mdl-dialog__content">
+        <p>
+          Email is the best way to get a hold of me, but feel free to call
+          if it is a reasonable hour in GMT -5.
+        </p>
+      </div>
+      <div class="mdl-dialog__actions mdl-dialog__actions--full-width">
+        <a href="mailto:markweig@gmail.com?Weigel.site Contact" class="mdl-button mdl-button--accent">Email Me</a>
+        <a href="tel:2676032621" class="mdl-button mdl-button--accent">Call Me</a>
+        <a href="#" class="mdl-button close">Nevermind</a>
+      </div>
+    </dialog>
+    
+    <script src="assets/js/app.js" async></script>
+    <!-- Use Web Font Loader to prevent render blocking -->
+    <script async>
+      WebFontConfig = {
+        google: {
+          families: ['Roboto:300,400,500', 'Material Icons']
+        }
+      };
+
+      (function(d) {
+        var wf = d.createElement('script');
+        var s = d.scripts[0];
+
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js';
+        s.parentNode.insertBefore(wf, s);
+      })(document);
+    </script>
+  </body>
+</html>
