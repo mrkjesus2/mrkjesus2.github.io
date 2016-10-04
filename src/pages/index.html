@@ -19,7 +19,7 @@
           <a href="project-{{@index}}.html" class="mdl-button mdl-button--raised mdl-button--accent mdl-js-button mdl-js-ripple-effect">
             Read More
           </a>
-          <a href="{{this.url}}" class="mdl-button mdl-button--raised mdl-button--accent mdl-js-button mdl-js-ripple-effect">
+          <a href="{{this.url}}" class="mdl-button mdl-button--raised mdl-button--accent mdl-js-button mdl-js-ripple-effect" {{#unless url}}disabled{{/unless}}>
             View Project
           </a>
         </div>
